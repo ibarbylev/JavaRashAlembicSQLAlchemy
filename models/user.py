@@ -11,4 +11,4 @@ class User(Base):
     name: Mapped[str] = mapped_column(String, nullable=False)
     age: Mapped[int] = mapped_column(Integer)
     email: Mapped[str] = mapped_column(String, unique=True)
-    address: Mapped[str] = mapped_column(String(100))
+    city: Mapped[str] = mapped_column(String(100), nullable=True)
